@@ -1,4 +1,3 @@
-import type { NextPage } from 'next';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -7,14 +6,12 @@ const Wrapper = styled.div`
   border: 1px solid red;
 `;
 
-const Home: NextPage = () => {
+export default function Layout() {
   return (
     <>
       <Wrapper>
-        aa
+        aaa
       </Wrapper>
     </>
-  )
+  );
 }
-
-export default Home
