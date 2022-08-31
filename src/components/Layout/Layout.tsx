@@ -22,11 +22,26 @@ const Header = styled.div`
   background-color: hsl(0, 0%, 100%);
 `;
 
+const HamburgerMenu = styled.div`
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+`;
+
 export default function Layout({ children }: ChildrenProps) {
   return (
     <>
       <Wrapper>
-        <Header>header</Header>
+        <Header>
+          <img src="https://notahotel.com/assets/images/logo-header.svg" />
+          <img src="https://notahotel.com/assets/images/icon-brochure.svg" />
+          <p>Documents and inquiries</p>
+          <HamburgerMenu><span></span><span></span></HamburgerMenu>
+        </Header>
         {children}
       </Wrapper>
     </>
