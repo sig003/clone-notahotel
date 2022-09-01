@@ -14,15 +14,16 @@ const Wrapper = styled.div`
 const Header = styled.div`
   width: 100%;
   position: fixed;
-  height: 60px;
-  border:1px solid blue;
+  height: 59px;
   top: 0;
   left: 0;
   right: 0;
   background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
 `;
 
-const HamburgerMenu = styled.div`
+const HamburgerMenuWrapper = styled.div`
   cursor: pointer;
   box-sizing: border-box;
   display: flex;
@@ -32,15 +33,39 @@ const HamburgerMenu = styled.div`
   justify-content: center;
 `;
 
+const HamburgerMenu = styled.div`
+  display: inline-block;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+  width: 16px;
+  height: 12px;
+  position: relative;
+  cursor: pointer;
+  border:1px solid red;
+`;
+
 export default function Layout({ children }: ChildrenProps) {
   return (
     <>
       <Wrapper>
         <Header>
-          <img src="https://notahotel.com/assets/images/logo-header.svg" />
-          <img src="https://notahotel.com/assets/images/icon-brochure.svg" />
-          <p>Documents and inquiries</p>
-          <HamburgerMenu><span></span><span></span></HamburgerMenu>
+          <a href="/">
+            <img src="https://notahotel.com/assets/images/logo-header.svg" />
+          </a>
+          <div>
+            <a href="/">
+              <img src="https://notahotel.com/assets/images/icon-brochure.svg" />
+              <p>Documents and inquiries</p>
+            </a>
+            <HamburgerMenuWrapper>
+              <HamburgerMenu>
+                <span></span>
+                <span></span>
+              </HamburgerMenu>
+            </HamburgerMenuWrapper>
+          </div>
         </Header>
         {children}
       </Wrapper>
