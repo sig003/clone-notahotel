@@ -4,9 +4,7 @@ import styled from 'styled-components';
 const Home: NextPage = () => {
   return (
     <>
-      <div>
-        bb
-      </div>
+
     </>
   )
 }
