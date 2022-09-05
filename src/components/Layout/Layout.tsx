@@ -22,7 +22,7 @@ const Header = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.25rem;
+  padding-top: 0.4rem;
   padding-left: 3.125rem;
 `;
 
@@ -32,6 +32,9 @@ const HeaderRight = styled.div`
   width: 20rem;
   font-size: 12px;
   font-weight: 600;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 `;
 
 const HamburgerMenuWrapper = styled.div`
@@ -53,9 +56,25 @@ const HamburgerMenu = styled.div`
   width: 16px;
   height: 12px;
   position: relative;
-  cursor: pointer;
-  border:1px solid red;
+
+  & > span {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    box-sizing: border-box;
+    &:last-child {
+      top: 8px;
+    }
+  }
 `;
+
 const Atag = styled.a`
   cursor: pointer;
   display: flex;
@@ -72,7 +91,7 @@ export default function Layout({ children }: ChildrenProps) {
       <Wrapper>
         <Header>
           <a href="/">
-            <img src="https://notahotel.com/assets/images/logo-header.svg" alt="NOT A HOTEL" />
+            <img src="https://notahotel.com/assets/images/logo-header.svg" alt="NOT A HOTEL" width="70px" height="19px"/>
           </a>
           <HeaderRight>
             <Atag href="/">
