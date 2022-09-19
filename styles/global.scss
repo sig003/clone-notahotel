@@ -14,3 +14,9 @@ a {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Gothic MB101 Medium';
+  font-weight: Bold;
+  src: url(//wf.typesquare.com/3/tsst/dist/ja/ts?condition=d3a53d03b5cbaa7a2201cd9b7155b2a6&eid=601935f443004915a57535c6ac1e02e5&bw[name]=Safari&bw[ftf]=1&bw[os]=Macintosh&location=notahotel.com%2F&fonts[id]=2173&fonts[str]=JywuMDNBQkNERUhKTE5PU1RVV1hZYWJjZGVmZ2hpbG1ub3Byc3R1dnd54oCL);
+}
