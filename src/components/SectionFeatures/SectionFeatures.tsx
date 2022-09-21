@@ -7,7 +7,7 @@ const SectionTag = styled.section`
   width: 700px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 85px;
+  padding-top: 50px;
   padding-right: 0px;
   padding-bottom: 40px;
   padding-left: 0px;
@@ -16,8 +16,6 @@ const SectionTag = styled.section`
 `;
 
 const TopPTag = styled.p`
-  //opacity: 1;
-  //transform: translate(0px, 0px);
   font-size: 34px;
   margin-top: 0px;
   font-family: "Gothic MB101 Bold", "Gothic MB101 Medium", -apple-system, "Segoe UI", Roboto, "Droid Sans", sans-serif;
@@ -32,8 +30,6 @@ const TopPTag = styled.p`
 `;
 
 const BottomPTag = styled.p`
-  //opacity: 1;
-  //transform: translate(0px, 0px);
   font-size: 16px;
   line-height: 2;
   margin-top: 35px;
@@ -53,12 +49,17 @@ export default function SectionFeatures() {
   });
   return (
     <>
-    <div data-aos="fade-up">
-      <SectionTag>
+      <SectionTag 
+        data-aos="fade-up"
+        data-aos-offset="0"
+        data-aos-once="true"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="top-bottom"
+      >
         <TopPTag>Buy a vacation home that doubles <br />as a hotel</TopPTag>
         <BottomPTag>You can use it as a personal vacation home. When you aren't using it, NOT A HOTEL will rent it out. You can buy as many as you want, giving you many homes. We provide an ideal home life. </BottomPTag>
       </SectionTag>
-      </div>
     </>
   );
 }
