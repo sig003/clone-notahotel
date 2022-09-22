@@ -15,6 +15,9 @@ a {
   box-sizing: border-box;
 }
 
+@import 'node_modules/aos/src/sass/aos.scss';
+$aos-distance: 10px !important;
+
 @font-face{
   font-family:'Barlow';
   font-style:normal;
