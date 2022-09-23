@@ -51,7 +51,7 @@ export default function SectionFeatures() {
     <>
       <SectionTag 
         data-aos="fade-up"
-        data-aos-offset="120"
+        data-aos-offset="150"
         data-aos-once="true"
         data-aos-delay="50"
         data-aos-duration="1000"

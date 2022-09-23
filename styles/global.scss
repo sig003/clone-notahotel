@@ -15,8 +15,10 @@ a {
   box-sizing: border-box;
 }
 //https://openbase.com/js/aos/documentation
-@import 'node_modules/aos/src/sass/aos.scss';
-$aos-distance: 10px !important;
+//https://www.npmjs.com/package/aos/v/3.0.0-beta.4
+$aos-distance: 10px;
+@import '/app/nextjs/clone-notahotel/node_modules/aos/src/sass/aos.scss';
+
 
 @font-face{
   font-family:'Barlow';
