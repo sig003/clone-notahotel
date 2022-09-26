@@ -49,15 +49,21 @@ export default function SectionFeatures() {
   });
   return (
     <>
-      <SectionTag 
-        data-aos="fade-up"
-        data-aos-offset="150"
-        data-aos-once="true"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-      >
-        <TopPTag>Buy a vacation home that doubles <br />as a hotel</TopPTag>
-        <BottomPTag>You can use it as a personal vacation home. When you aren't using it, NOT A HOTEL will rent it out. You can buy as many as you want, giving you many homes. We provide an ideal home life. </BottomPTag>
+      <SectionTag>
+        <TopPTag
+                data-aos="fade-up"
+                data-aos-offset="150"
+                data-aos-once="true"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+        >Buy a vacation home that doubles <br />as a hotel</TopPTag>
+        <BottomPTag
+                data-aos="fade-up"
+                data-aos-offset="150"
+                data-aos-once="true"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+        >You can use it as a personal vacation home. When you aren't using it, NOT A HOTEL will rent it out. You can buy as many as you want, giving you many homes. We provide an ideal home life. </BottomPTag>
       </SectionTag>
     </>
   );
