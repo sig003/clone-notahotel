@@ -63,7 +63,9 @@ export default function SectionFeatures() {
                 data-aos-once="true"
                 data-aos-delay="50"
                 data-aos-duration="1000"
-        >You can use it as a personal vacation home. When you aren't using it, NOT A HOTEL will rent it out. You can buy as many as you want, giving you many homes. We provide an ideal home life. </BottomPTag>
+        >
+	  You can use it as a personal vacation home. When you aren't using it, NOT A HOTEL will rent it out. You can buy as many as you want, giving you many homes. We provide an ideal home life.
+	</BottomPTag>
       </SectionTag>
     </>
   );
