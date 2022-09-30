@@ -43,6 +43,18 @@ const BottomPTag = styled.p`
   margin-inline-end: 0px;
 `;
 
+const IframeSection = styled.div`
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 0px;
+  padding-top: 56.25%;
+  margin-top: 50px;
+  border:1px solid red;
+`;
+
 export default function SectionFeatures() {
   useEffect(() => {
     AOS.init();
@@ -56,7 +68,9 @@ export default function SectionFeatures() {
                 data-aos-once="true"
                 data-aos-delay="50"
                 data-aos-duration="1000"
-        >Buy a vacation home that doubles <br />as a hotel</TopPTag>
+        >
+          Buy a vacation home that doubles <br />as a hotel
+        </TopPTag>
         <BottomPTag
                 data-aos="fade-up"
                 data-aos-offset="150"
@@ -64,8 +78,20 @@ export default function SectionFeatures() {
                 data-aos-delay="50"
                 data-aos-duration="1000"
         >
-	  You can use it as a personal vacation home. When you aren't using it, NOT A HOTEL will rent it out. You can buy as many as you want, giving you many homes. We provide an ideal home life.
-	</BottomPTag>
+          You can use it as a personal vacation home. When you aren't using it, NOT A HOTEL will rent it out. You can buy as many as you want, giving you many homes. We provide an ideal home life.
+        </BottomPTag>
+        <IframeSection>
+          {/*<iframe 
+            src="https://player.vimeo.com/video/722006775?h=39f6682d9e&app_id=122963" 
+            width="426" 
+            height="240" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen="" 
+            title="ホテルにもできる別荘を買おう | NOT A HOTEL" 
+            data-ready="true"
+  ></iframe>*/}
+        </IframeSection>
       </SectionTag>
     </>
   );
