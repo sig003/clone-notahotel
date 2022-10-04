@@ -81,16 +81,16 @@ export default function SectionFeatures() {
           You can use it as a personal vacation home. When you aren't using it, NOT A HOTEL will rent it out. You can buy as many as you want, giving you many homes. We provide an ideal home life.
         </BottomPTag>
         <IframeSection>
-          {/*<iframe 
+          <iframe 
             src="https://player.vimeo.com/video/722006775?h=39f6682d9e&app_id=122963" 
-            width="426" 
-            height="240" 
-            frameborder="0" 
+            width="426"
+            height="240"
+            frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture" 
-            allowfullscreen="" 
+            allowFullScreen="" 
             title="ホテルにもできる別荘を買おう | NOT A HOTEL" 
             data-ready="true"
-  ></iframe>*/}
+          ></iframe>
         </IframeSection>
       </SectionTag>
     </>
